@@ -1,0 +1,180 @@
+/** @format */
+
+body {
+  background-color: #263238;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.togglebtn {
+  visibility: hidden;
+}
+.logoo {
+  h1 {
+    color: white;
+    margin: 20px;
+  }
+}
+.Navlinks {
+  ul {
+    li {
+      list-style-type: none;
+      margin: 23px;
+      a {
+        text-decoration: none;
+        font-size: 23px;
+        color: white;
+        &:hover {
+          color: #7eb13e;
+        }
+      }
+    }
+  }
+}
+.footer {
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    &:hover {
+      color: yellowgreen;
+    }
+  }
+}
+.tag {
+  h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  p {
+    color: orange;
+    font-size: 35px;
+  }
+  button {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    &:hover {
+      background-color: #7211f6;
+    }
+  }
+}
+.commanBody {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.Fimg {
+  img {
+    // width: 90%;
+    animation: MoveUpDown 8s linear infinite;
+    position: relative;
+  }
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
+.services {
+  margin-bottom: 20px;
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+  }
+}
+.contact {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  button {
+    margin-top: 30px;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  p {
+    color: white;
+    font-size: 20px;
+  }
+  input {
+    outline: none;
+    border: none;
+    background-color: purple;
+    color: white;
+    padding: 5px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    width: 300px;
+    &::placeholder {
+      color: lightseagreen;
+    }
+  }
+}
+.error {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  h1 {
+    text-align: center;
+    color: red;
+    font-size: 50px;
+  }
+}
+.activeMenu {
+  border-bottom: 3px solid orangered;
+}
+.showC {
+  ul {
+    li {
+      list-style-type: none;
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .commanBody {
+    margin-top: 0;
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 25px;
+    }
+    button {
+      padding: 8px;
+    }
+  }
+  .Fimg {
+    img {
+      // width: 80%;
+      // position: static;
+      margin-top: 110px;
+    }
+  }
+  .footer {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .Navlinks {
+    display: none;
+  }
+  .togglebtn {
+    // display: block;
+    visibility: visible;
+    color: white;
+    float: right;
+    &:hover {
+      color: yellowgreen;
+    }
+  }
+}
