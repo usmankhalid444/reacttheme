@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
-
+import EditIcon from "@material-ui/icons/Edit";
+import DeleteIcon from "@material-ui/icons/Delete";
 const Contact = () => {
   const [data, setData] = useState({});
   const getdata = (e) => {
@@ -65,25 +66,29 @@ const Contact = () => {
             <ul>
               <li>
                 <p>
-                  my name is{" "}
+                  <DeleteIcon style={{ color: "red" }} />{" "}
+                  <EditIcon style={{ color: "yellow" }} /> my name is{" "}
                   <span style={{ color: "orangered" }}>{data.name}</span>
                 </p>
               </li>
               <li>
                 <p>
-                  my phone number is{" "}
+                  <DeleteIcon style={{ color: "red" }} />{" "}
+                  <EditIcon style={{ color: "yellow" }} /> my phone number is{" "}
                   <span style={{ color: "orangered" }}>{data.phone}</span>
                 </p>
               </li>
               <li>
                 <p>
-                  my email is{" "}
+                  <DeleteIcon style={{ color: "red" }} />{" "}
+                  <EditIcon style={{ color: "yellow" }} /> my email is{" "}
                   <span style={{ color: "orangered" }}>{data.email}</span>
                 </p>
               </li>
               <li>
                 <p>
-                  i want to say{" "}
+                  <DeleteIcon style={{ color: "red" }} />{" "}
+                  <EditIcon style={{ color: "yellow" }} /> i want to say{" "}
                   <span style={{ color: "orangered" }}>{data.message}</span>
                 </p>
               </li>
